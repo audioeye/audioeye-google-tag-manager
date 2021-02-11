@@ -1,12 +1,4 @@
-﻿___TERMS_OF_SERVICE___
-
-By creating or modifying this file you agree to Google Tag Manager's Community
-Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
-Google may provide), as modified from time to time.
-
-
-___INFO___
+﻿___INFO___
 
 {
   "type": "TAG",
@@ -42,15 +34,13 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "NON_EMPTY"
       }
-    ],
-    "valueHint": "example: 1ae19fcebe11fa211bc40"
+    ]
   }
 ]
 
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-// Enter your template code here.
 const log = require('logToConsole');
 const injectScript = require('injectScript');
 const setInWindow = require('setInWindow');
@@ -60,6 +50,7 @@ log('data =', data);
 const hash = data.aeHash;
 
 setInWindow('__AudioEyeSiteHash', hash, true);
+setInWindow('__AudioEyeSitePlatform', 'gtm', true);
 
 injectScript('https://wsmcdn.audioeye.com/aem.js', data.gtmOnSuccess, data.gtmOnFailure);
 
