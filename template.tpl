@@ -58,9 +58,8 @@ log('data =', data);
 const hash = data.aeHash;
 
 setInWindow('__AudioEyeSiteHash', hash, true);
-setInWindow('__AudioEyeSitePlatform', 'gtm', true);
 
-injectScript('https://wsmcdn.audioeye.com/aem.js', data.gtmOnSuccess, data.gtmOnFailure);
+injectScript('https://wsmcdn.audioeye.com/aem.js?platform=gtm', data.gtmOnSuccess, data.gtmOnFailure);
 
 
 ___WEB_PERMISSIONS___
@@ -131,7 +130,7 @@ ___WEB_PERMISSIONS___
                   },
                   {
                     "type": 8,
-                    "boolean": true
+                    "boolean": false
                   }
                 ]
               }
