@@ -1,5 +1,5 @@
 homepage: "https://www.audioeye.com"
 documentation: "https://www.audioeye.com/integrations-google-tag-manager"
 versions:
-  - sha: 1feb5670174e49432c5e14ca4ab40bc628efd41d
+  - sha: 85698f5adfe503eeb20f84bbe4514c44a8cf9c47
     changeNotes: Initial release.
