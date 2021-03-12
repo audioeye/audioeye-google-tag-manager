@@ -1,6 +1,10 @@
 homepage: "https://www.audioeye.com"
 documentation: "https://www.audioeye.com/google-tag-manager"
 versions:
+  # Latest Version
+  - sha: 8e3a4d44fb603a8ff88fa9239fe5e13b30226676
+    changeNotes: v1.0 - Setup template to pass template usage metrics.
+  # Previous Versions
   - sha: 9d539e16ec4f2f4171e6265bf1c612294025d197
     changeNotes: Fixed incorrect documentation link.
   - sha: 97c1fdb745a4370324e422e107852929e0ac13e1
