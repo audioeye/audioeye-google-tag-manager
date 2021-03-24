@@ -2,9 +2,11 @@ homepage: "https://www.audioeye.com"
 documentation: "https://www.audioeye.com/google-tag-manager"
 versions:
   # Latest Version
+  - sha: df11e2760952420d83c3edff919c47e8ac7af2de
+    changeNotes: v1.1 - Added permissions for __AudioEyeInstallSource global variable.
+  # Previous Versions
   - sha: 8e3a4d44fb603a8ff88fa9239fe5e13b30226676
     changeNotes: v1.0 - Setup template to pass template usage metrics.
-  # Previous Versions
   - sha: 9d539e16ec4f2f4171e6265bf1c612294025d197
     changeNotes: Fixed incorrect documentation link.
   - sha: 97c1fdb745a4370324e422e107852929e0ac13e1
