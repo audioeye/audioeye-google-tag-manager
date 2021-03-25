@@ -58,7 +58,7 @@ log('data =', data);
 const hash = data.aeHash;
 
 setInWindow('__AudioEyeSiteHash', hash, true);
-setInWindow('__AudioEyeInstallSource', 'gtm-1.0', true);
+setInWindow('__AudioEyeInstallSource', 'gtm-1.2', true);
 
 injectScript('https://wsmcdn.audioeye.com/aem.js', data.gtmOnSuccess, data.gtmOnFailure);
 
