@@ -2,9 +2,11 @@ homepage: "https://www.audioeye.com"
 documentation: "https://www.audioeye.com/google-tag-manager"
 versions:
   # Latest Version
+  - sha: 4fb576b96e16da70b3aaa98f324dcabd62637b84
+    changeNotes: Updated AudioEye logo
+  # Previous Versions
   - sha: 4e7621945d004e5a812f3efda9dd593c9a4840e2
     changeNotes: Updated display name
-  # Previous Versions
   - sha: 560c89614354522a17f616e2dc6c2dab4df658ac
     changeNotes: v1.2 - Updated __AudioEyeInstallSource variable to use current version
   - sha: df11e2760952420d83c3edff919c47e8ac7af2de
