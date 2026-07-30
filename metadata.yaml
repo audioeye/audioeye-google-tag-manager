@@ -2,8 +2,7 @@ homepage: "https://www.audioeye.com"
 documentation: "https://www.audioeye.com/google-tag-manager"
 versions:
   # Latest Version
-  # TODO(IN-35691): set this sha to the squash-merge commit of this PR before republishing to the Gallery.
-  - sha: TBD-SET-TO-MERGE-COMMIT
+  - sha: 871bd264ab20496ee86df798639958cc7a587c10
     changeNotes: "v1.3 - IN-35691: load AudioEye from audioeye-services.com so tracking prevention (Edge Strict, Safari ITP, ad blockers) does not block the widget."
   # Previous Versions
   - sha: 4fb576b96e16da70b3aaa98f324dcabd62637b84
