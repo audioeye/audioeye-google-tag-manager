@@ -58,9 +58,12 @@ log('data =', data);
 const hash = data.aeHash;
 
 setInWindow('__AudioEyeSiteHash', hash, true);
-setInWindow('__AudioEyeInstallSource', 'gtm-1.2', true);
+setInWindow('__AudioEyeInstallSource', 'gtm-1.3', true);
 
-injectScript('https://wsmcdn.audioeye.com/aem.js', data.gtmOnSuccess, data.gtmOnFailure);
+// IN-35691: load from the audioeye-services.com apex. audioeye.com is on tracking-prevention
+// blocklists (Edge Strict, Safari ITP, ad blockers), which blocks aem.js and the entire asset
+// chain it pulls, so the AudioEye widget fails to run on the client site.
+injectScript('https://wsv3cdn.audioeye-services.com/aem.js', data.gtmOnSuccess, data.gtmOnFailure);
 
 ___WEB_PERMISSIONS___
 
@@ -197,7 +200,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://wsmcdn.audioeye.com/*"
+                "string": "https://wsv3cdn.audioeye-services.com/*"
               }
             ]
           }
